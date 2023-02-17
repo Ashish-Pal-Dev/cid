@@ -1,4 +1,4 @@
-name: Github Action Ofr
+name: Github action ofr
 on: 
   push:
     branches: [master]
