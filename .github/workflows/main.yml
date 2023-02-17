@@ -1,1 +1,31 @@
 # workflow
+
+# name: Ashish Pal
+
+# marks: 10
+
+# sub:
+# - dsa
+# - node
+# - mac
+
+# user: 
+#  name: Ashish Pal
+#  course: nxm
+
+# value: ${{env.value}}
+
+# variable: ${{github.variable}}
+
+
+name: Github Action Ofr
+
+on:
+  push:
+    branches: [main]
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    -name: Print Hello World
+    -run: echo "Hello World!"
