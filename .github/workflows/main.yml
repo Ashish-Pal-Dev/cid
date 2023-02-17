@@ -1,11 +1,21 @@
-name: Github action ofr
-on: 
-  push:
-    branches: [master]
-jobs: 
-  build:
+# name: Github action ofr
+# on: 
+#  push:
+#     branches: [master]
+# jobs: 
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v3
+#     - name: Print Hello World
+#       run: node --version
+
+name: learn-github-actions
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push]
+jobs:
+  check-bats-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Print Hello World
-        run: node --version
+      - run: node --v
