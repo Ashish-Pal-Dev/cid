@@ -1,6 +1,6 @@
 name: Github action ofr
 on: 
-  push:
+  push :
     branches: [master]
 jobs: 
   build:
