@@ -1,9 +1,11 @@
 name: Github Action Ofr
-on: push
+on: 
+  push:
+    branches: [master]
 jobs: 
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - name: Print Hello World
-    - run: node --version
+     run: node --version
